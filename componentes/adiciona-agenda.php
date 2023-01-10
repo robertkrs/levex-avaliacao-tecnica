@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+    <title>Levex - Novo Agendamento</title>
   </head>
   <body>
     <header class="header">
@@ -23,20 +23,20 @@
         </ul>
       </div>
 
-      <form action="adicionaSQL.php" method="POST" class="formulario" id="formulario">
+      <form action="adicionaSQL.php" method="POST" class="formulario" id="formulario" required>
         <h1>Novo Agendamento</h1>
         <div class="agenda-cliente ajuste">
           <label for="nome">
             Nome
           </label>
-          <input type="text" name="nome" id="nome" placeholder="Nome do Cliente"/>
+          <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" required/>
 
         </div>
         <div class="agenda-titulo ajuste">
           <label for="titulo">
             Titulo
           </label>
-          <input type="text" name="titulo" id="titulo" placeholder="Titulo do Agendamento"/>
+          <input type="text" name="titulo" id="titulo" placeholder="Titulo do Agendamento" required/>
 
         </div>
         <div class="agenda-conteudo ajuste">
@@ -50,11 +50,11 @@
           <label for="data-inicio">
             Data Inicial
           </label>
-          <input type="date" name="data-inicio" id="data-inicio" />
+          <input type="date" name="data-inicio" id="data-inicio" required/>
           <label for="data-final">
             Data Final
           </label>
-          <input type="date" name="data-final" id="data-final" />
+          <input type="date" name="data-final" id="data-final" required/>
         </div>
         <input
           type="submit"
