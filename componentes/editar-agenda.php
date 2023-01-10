@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['submit'])){
-    include_once('./config.php');
+    include_once('../config.php');
     
     $id = $_POST['id'];
     $nome = $_POST['nome'];
@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     $resultx = $conexao->query($sql);
 
     if(mysqli_num_rows($resultx) >= 1){
-        header("location:index.php");
+        header("location:../index.php");
     }else{
         return false;
     }

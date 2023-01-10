@@ -1,31 +1,14 @@
-Maria tem é dona de uma agência de consultoria de vendas e faz o atendimento de
-seus clientes remota e presencial.
+##FUNCIONAMENTO
 
-Com o aumento da demanda, Maria já não está mais conseguindo organizar seus
-agendamentos através de uma agenda física.
+<p>O sistema funciona da seguinte forma, foi utilizado um servidor local php para roda-lo<br>utilizado mysqli para o banco de dados</p>
+<p>Sua interface ira mostrar os agendamentos cadastrados, podendo lista-los de 3 formas</p>
 
-Em sua agenda, Maria tem as seguintes informações do evento: Data Inicial, Data
-Final, Título, Descrição e Cliente.
+<ul>
+    <li>1 - Mostrando todos os agendamentos</li>
+    <li>2 - Mostrando os agendamentos que ja passaram</li>
+    <li>3 - Mostrando os agendamentos que ainda não passaram</li>
+</ul>
 
-Sua missão é ajudar Maria a levar seus agendamentos para uma ferramenta digital.
 
-O que deverá ser feito: #Listagem de agendamentos próximos; #Listagem de
-agendamentos passados; #Formulário para criação de novo agendamento; #Formulário
-para edição de novo agendamento;
-
-#Possibilidade de excluir um agendamento. Para evitar que Maria apague um
-agendamento incorreto, o sistema deverá pedir a confirmação de exclusão.
-
-Como deverá ser entregue:
-
-Você deverá desenvolver o sistema para atender as necessidades de Maria de
-acordo com as especificações utilizando as seguintes tecnologias: PHP, MySQL,
-HTML, JS e CSS;
-
-Você deverá utilizar o Github para versionar o seu projeto e quando terminar de
-implementar, deverá responder este e-mail com o link do seu repositório.
-
-Atenção: Faz parte da prova a configuração do ambiente de desenvolvimento para a
-realização das questões. Isso pode incluir a configuração de um cliente de Banco
-de dados MySQL, bem como a conexão dos arquivos com o Banco de Dados. Por favor
-adicione o script SQL de criação do banco de dados ao seu projeto.
+<p>Para adicionar um novo elemento, clique no botão abaixo da tabela com o icone de calendario</p>
+<p>Caso tenha errado e queira editar ou excluir um registro, basta clicar no agendamento, assim aparecerá o formulario para a edição, ou se preferir excluir, basta apertar no botão abaixo com o icone de lixeira</p>

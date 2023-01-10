@@ -11,14 +11,14 @@
   <body>
     <header class="header">
       <div class="img">
-        <img src="/imagens/logo.png" alt="logo-empresa" />
+        <img src="../imagens/logo.png" alt="logo-empresa" />
       </div>
     </header>
 
     <main class="main">
       <div class="agendamentos">
         <ul class="agendamentos-menu">
-          <li class='voltar'><a href="/index.php"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a></li>
+          <li class='voltar'><a href="../index.php"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a></li>
           
         </ul>
       </div>
@@ -67,6 +67,6 @@
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

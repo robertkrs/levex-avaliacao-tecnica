@@ -1,5 +1,5 @@
 <?php
-    include_once('./config.php');
+    include_once('../config.php');
     if(!empty($_GET['id'])){
 
         $id = $_GET['id'];
@@ -11,10 +11,10 @@
             $result2 = $conexao->query($sqlDelete);
             
         }
-        header("Location:./index.php");
+        header("location:../index.php");
 
     }
     else{
-        header("Location:./../dashboard.php");
+        header("location:../index.php");
     }
 ?>

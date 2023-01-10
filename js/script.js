@@ -17,12 +17,12 @@ agendaClick.forEach((e) => {
     principal.innerHTML = `
     <div class="agendamentos">
         <ul class="agendamentos-menu">
-          <li class='voltar'><a href="/index.php"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a></li>
+          <li class='voltar'><a href="../index.php"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a></li>
           
         </ul>
       </div>
     
-    <form action="./editar-agenda.php" method="POST" class="formulario" id="formulario">
+    <form action="./componentes/editar-agenda.php" method="POST" class="formulario" id="formulario">
     <h1>Novo Agendamento</h1>
     <div class="agenda-cliente ajuste">
       <label for="nome">
@@ -64,7 +64,7 @@ agendaClick.forEach((e) => {
       class="btn"
     />
       <div id='remover' class='img-remover'>
-        <a href='./remove.php?id=${agenda.id}'><ion-icon src='./imagens/trash-outline.svg'></ion-icon</a>
+        <a href='./componentes/remove.php?id=${agenda.id}'><ion-icon src='./imagens/trash-outline.svg'></ion-icon</a>
       </div>
     </form>
    
