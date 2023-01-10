@@ -1,4 +1,6 @@
-##FUNCIONAMENTO <img src ='/imagens/interface.png' alt = "interface"/>
+# FUNCIONAMENTO
+
+![Previa da interface]('./imagens/interface.png');
 
 <p>O sistema funciona da seguinte forma, foi utilizado um servidor local php para roda-lo<br>utilizado mysqli para o banco de dados</p>
 <p>Sua interface ira mostrar os agendamentos cadastrados, podendo lista-los de 3 formas</p>
