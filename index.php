@@ -19,7 +19,7 @@
   <body>
     <header class="header">
       <div class="img">
-        <img src="/imagens/logo.png" alt="logo-empresa" />
+        <img src="/imagens/logo.svg" alt="logo-empresa" />
       </div>
     </header>
 
