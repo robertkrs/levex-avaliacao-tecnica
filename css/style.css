@@ -53,6 +53,9 @@ html {
 .agendamentos .agendamentos-menu .voltar a:hover {
   color: #ff8a1c;
 }
+
+/*Tabela*/
+
 .table {
   width: 1100px;
   margin: 20px 0;
@@ -97,7 +100,8 @@ html {
   border-color: #ff8a1c;
   color: #ff8a1c;
 }
-/*formulario*/
+
+/*Formulario*/
 
 .formulario {
   display: grid;
@@ -146,10 +150,6 @@ html {
   background: none;
 }
 
-.formulario .agenda-data input {
-  width: 137px;
-}
-
 .formulario .agenda-data {
   display: grid;
   grid-template-columns: 80px auto 80px auto;
@@ -171,9 +171,13 @@ html {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Classe do filtro*/
+
 .hidden {
   display: none;
 }
+
+/*Remover*/
 
 .img-remover {
   padding: 12px;
