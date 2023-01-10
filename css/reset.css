@@ -1,0 +1,27 @@
+body,
+header,
+nav,
+h1,
+ul,
+li,
+main,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
