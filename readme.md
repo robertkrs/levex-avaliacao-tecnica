@@ -9,6 +9,7 @@
     <li>3 - Mostrando os agendamentos que ainda não passaram</li>
 </ul>
 
-
 <p>Para adicionar um novo elemento, clique no botão abaixo da tabela com o icone de calendario</p>
 <p>Caso tenha errado e queira editar ou excluir um registro, basta clicar no agendamento, assim aparecerá o formulario para a edição, ou se preferir excluir, basta apertar no botão abaixo com o icone de lixeira</p>
+
+#O dump sql esta na pasta dump
