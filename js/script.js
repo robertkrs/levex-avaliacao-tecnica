@@ -28,14 +28,14 @@ agendaClick.forEach((e) => {
       <label for="nome">
         Nome
       </label>
-      <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" value='${agenda.nome}'/>
+      <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" value='${agenda.nome}' required/>
 
     </div>
     <div class="agenda-titulo ajuste">
       <label for="titulo">
         Titulo
       </label>
-      <input type="text" name="titulo" id="titulo" placeholder="Titulo do Agendamento" value='${agenda.titulo}'/>
+      <input type="text" name="titulo" id="titulo" placeholder="Titulo do Agendamento" value='${agenda.titulo}' required/>
 
     </div>
     <div class="agenda-conteudo ajuste">
@@ -49,11 +49,11 @@ agendaClick.forEach((e) => {
       <label for="data-inicio">
         Data Inicial
       </label>
-      <input type="date" name="data-inicio" id="data-inicio" value='${agenda.dataInicial}'/>
+      <input type="date" name="data-inicio" id="data-inicio" value='${agenda.dataInicial}' required/>
       <label for="data-final">
         Data Final
       </label>
-      <input type="date" name="data-final" id="data-final" value='${agenda.dataFinal}'/>
+      <input type="date" name="data-final" id="data-final" value='${agenda.dataFinal}' required/>
     </div>
     <input type='hidden' name='id' value='${agenda.id}'>
     <input
