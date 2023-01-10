@@ -23,7 +23,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id='principal'>
       <div class="agendamentos">
         <ul class="agendamentos-menu" id='filtros'>
           <li class="agenda-on">Todos</li>
@@ -31,7 +31,7 @@
           <li>Agendamentos Próximos</li>
         </ul>
       </div>
-      <div id="edit">
+      <div >
       <table class="table" >
         <thead>
           <tr>

@@ -3,41 +3,36 @@
 :root {
   --font: "Red Hat Text", sans-serif;
 }
-
+html {
+  height: 100vh;
+}
 .header .img {
   width: 120px;
   height: 120px;
   margin: 0 auto;
 }
 /*Agendamentos*/
+.main {
+  margin: 0 auto;
+  width: 1100px;
+}
 .agendamentos .agendamentos-menu {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 40px;
+  display: grid;
+  gap: 8px;
+  margin: 20px auto;
 }
 .agendamentos .agendamentos-menu li {
   font-family: var(--font);
   font-size: 0.9rem;
   text-transform: uppercase;
 }
-.agendamentos .agendamentos-menu li::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: 0.8s;
-}
 
 .agendamentos .agendamentos-menu li:hover {
   cursor: pointer;
 }
-.agendamentos .agendamentos-menu li:hover::after {
-  width: 100%;
-}
+
 .agendamentos .agendamentos-menu .agenda-on {
-  color: #ffb26b;
+  color: #ff8a1c;
 }
 .agendamentos .agendamentos-menu .agenda-on::after {
   display: none;
@@ -45,14 +40,22 @@
 .agendamentos .agendamentos-menu .agenda-on::before {
   display: inline-block;
   content: "";
-  width: 6px;
-  height: 6px;
-  border: 1px dashed green;
+  width: 5px;
+  height: 5px;
+  background: #000000;
   border-radius: 50%;
   margin-right: 4px;
+  margin-bottom: 2px;
+}
+.agendamentos .agendamentos-menu .voltar {
+  margin: 60px 270px 0;
+}
+.agendamentos .agendamentos-menu .voltar a:hover {
+  color: #ff8a1c;
 }
 .table {
-  margin: 40px auto 20px;
+  width: 1100px;
+  margin: 20px 0;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   border-collapse: collapse;
 }
@@ -78,7 +81,6 @@
 .icone-adicionar {
   display: block;
   align-items: center;
-  margin: 0 380px;
   padding: 12px;
   width: fit-content;
   height: 24px;
@@ -101,18 +103,23 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 120px auto;
+  margin: 80px auto;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   width: 600px;
-  height: 400px;
+  height: 500px;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 12px;
+}
+.formulario h1 {
+  margin-bottom: 12px;
+  font-family: var(--font);
 }
 .formulario input {
   margin: 0 12px;
   align-self: center;
   height: 40px;
+  background: none;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -123,39 +130,45 @@
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-.formulario .agenda-cliente input {
-  width: 420px;
-}
-.formulario .agenda-titulo input {
-  width: 411px;
+.formulario .ajuste {
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 .formulario .agenda-conteudo textarea {
-  width: 380px;
+  width: 374px;
   margin-left: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  background: none;
 }
 
 .formulario .agenda-data input {
   width: 137px;
 }
 
+.formulario .agenda-data {
+  display: grid;
+  grid-template-columns: 80px auto 80px auto;
+  align-items: center;
+}
+
 .formulario .btn {
   width: fit-content;
   justify-self: center;
   padding: 12px 8px;
-  background: none;
-  border: 1px solid #000;
+  margin-top: 20px;
+  background: rgba(227, 204, 204, 0.172);
   border-radius: 5px;
   text-transform: uppercase;
   font-family: var(--font);
 }
 .formulario .btn:hover {
   cursor: pointer;
-  border-color: #ffb26b;
-  color: #ff8a1c;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hidden {
@@ -174,6 +187,9 @@
   color: #000;
   width: 24px;
   height: 24px;
+}
+.img-remover:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 .img-remover:hover ion-icon {
   color: #ff8a1c;

@@ -2,7 +2,7 @@ const agendaClick = document.querySelectorAll("#agenda");
 
 agendaClick.forEach((e) => {
   e.addEventListener("click", function (e) {
-    const tabela = document.querySelector("#edit");
+    const principal = document.querySelector("#principal");
     var td = this.querySelectorAll("td");
 
     let agenda = {
@@ -14,45 +14,55 @@ agendaClick.forEach((e) => {
       dataFinal: td[5].innerHTML,
     };
 
-    tabela.innerHTML = `<form action="editar-agenda.php" method="POST" class="formulario" id="formulario">
-    <h1>Editar Agendamento</h1>  
-    <div class="agenda-cliente">
-        <label for="nome">
-          Nome
-          <input type="text" name="nome" id="nome" value='${agenda.nome}' />
-        </label>
+    principal.innerHTML = `
+    <div class="agendamentos">
+        <ul class="agendamentos-menu">
+          <li class='voltar'><a href="/index.php"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a></li>
+          
+        </ul>
       </div>
-      <div class="agenda-titulo">
-        <label for="titulo">
-          Titulo
-          <input type="text" name="titulo" id="titulo" value='${agenda.titulo}'/>
-        </label>
-      </div>
-      <div class="agenda-conteudo">
-        <label for="descricao">
-          Descrição
-          <textarea rows="5" cols="50" name="descricao" id="descricao">${agenda.descricao}
-          </textarea>
-        </label>
-      </div>
-      <div class="agenda-data">
-        <label for="data-inicio">
-          Data Inicial
-          <input type="date" name="data-inicio" id="data-inicio" value='${agenda.dataInicial}' />
-        </label>
-        <label for="data-final">
-          Data Final
-          <input type="date" name="data-final" id="data-final" value='${agenda.dataFinal}'/>
-        </label>
-      </div>
-      <input type='hidden' name='id' value='${agenda.id}'/>
-      <input
-        type="submit"
-        name="submit"
-        id="submit"
-        value="Confirmar Agendamento"
-        class="btn"
-      />
+    
+    <form action="./editar-agenda.php" method="POST" class="formulario" id="formulario">
+    <h1>Novo Agendamento</h1>
+    <div class="agenda-cliente ajuste">
+      <label for="nome">
+        Nome
+      </label>
+      <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" value='${agenda.nome}'/>
+
+    </div>
+    <div class="agenda-titulo ajuste">
+      <label for="titulo">
+        Titulo
+      </label>
+      <input type="text" name="titulo" id="titulo" placeholder="Titulo do Agendamento" value='${agenda.titulo}'/>
+
+    </div>
+    <div class="agenda-conteudo ajuste">
+      <label for="descricao">
+        Descrição     
+      </label>
+      <textarea rows="5" cols="50" name="descricao" id="descricao" >${agenda.descricao}
+      </textarea>
+    </div>
+    <div class="agenda-data">
+      <label for="data-inicio">
+        Data Inicial
+      </label>
+      <input type="date" name="data-inicio" id="data-inicio" value='${agenda.dataInicial}'/>
+      <label for="data-final">
+        Data Final
+      </label>
+      <input type="date" name="data-final" id="data-final" value='${agenda.dataFinal}'/>
+    </div>
+    <input type='hidden' name='id' value='${agenda.id}'>
+    <input
+      type="submit"
+      name="submit"
+      id="submit"
+      value="Confirmar Agendamento"
+      class="btn"
+    />
       <div id='remover' class='img-remover'>
         <a href='./remove.php?id=${agenda.id}'><ion-icon src='./imagens/trash-outline.svg'></ion-icon</a>
       </div>
