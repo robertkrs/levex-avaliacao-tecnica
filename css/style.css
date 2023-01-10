@@ -95,7 +95,10 @@ html {
   width: 24px;
   height: 24px;
 }
-
+.icone-adicionar:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
 .icone-adicionar:hover ion-icon {
   border-color: #ff8a1c;
   color: #ff8a1c;
