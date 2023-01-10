@@ -18,17 +18,18 @@
     <main class="main">
       <div class="agendamentos">
         <ul class="agendamentos-menu">
-          <li class="agenda-on">Todos</li>
+          <li class="agenda-on"><a href="/index.php">Todos</a></li>
           <li>Agendamentos Passados</li>
           <li>Agendamentos Próximos</li>
         </ul>
       </div>
 
       <form action="adicionaSQL.php" method="POST" class="formulario" id="formulario">
+        <h1>Novo Agendamento</h1>
         <div class="agenda-cliente">
           <label for="nome">
             Nome
-            <input type="text" name="nome" id="nome" />
+          <input type="text" name="nome" id="nome" />
           </label>
         </div>
         <div class="agenda-titulo">

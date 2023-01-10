@@ -25,7 +25,7 @@
 
     <main class="main">
       <div class="agendamentos">
-        <ul class="agendamentos-menu">
+        <ul class="agendamentos-menu" id='filtros'>
           <li class="agenda-on">Todos</li>
           <li>Agendamentos Passados</li>
           <li>Agendamentos Próximos</li>
@@ -61,9 +61,18 @@
           
         </tbody>
       </table>
+      <div class='icone-adicionar'>
+        <a href='./adiciona-agenda.php' ><ion-icon src='./imagens/calendar-outline.svg'></ion-icon></a>
       </div>
+   
+    </div>
+    
+
     </main>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="/js/script.js"></script>
+    <script src="js/filtro.js"></script>
   </body>
 </html>

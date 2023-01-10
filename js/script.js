@@ -15,7 +15,8 @@ agendaClick.forEach((e) => {
     };
 
     tabela.innerHTML = `<form action="editar-agenda.php" method="POST" class="formulario" id="formulario">
-      <div class="agenda-cliente">
+    <h1>Editar Agendamento</h1>  
+    <div class="agenda-cliente">
         <label for="nome">
           Nome
           <input type="text" name="nome" id="nome" value='${agenda.nome}' />
@@ -52,6 +53,17 @@ agendaClick.forEach((e) => {
         value="Confirmar Agendamento"
         class="btn"
       />
-    </form>`;
+      <div id='remover' class='img-remover'>
+        <a href='./remove.php?id=${agenda.id}'><ion-icon src='./imagens/trash-outline.svg'></ion-icon</a>
+      </div>
+    </form>
+   
+    `;
+    const remover = document.querySelector("#remover");
+    remover.addEventListener("click", () => {
+      confirm("Quer mesmo apagar este registro?");
+    });
   });
 });
+
+//
